@@ -28,7 +28,7 @@ function Aruk() {
                     {aruk.map(value => (
                         <div className="col-lg-4 mt-4 arukep" key={value.id}>
                             <h4>{value.nev}</h4>
-                            <a href="/megrendeles"><img src={value.kepUrl} alt={value.nev} className="img-fluid"></img></a>
+                            <a href={`/megrendeles/${value.id}`}><img src={value.kepUrl} alt={value.nev} className="img-fluid"></img></a>
                         </div>
                     ))}
                 </div>
